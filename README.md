@@ -1,35 +1,146 @@
 # AI Resume–Job Matching System
 
-This project matches resumes to job descriptions using AI/NLP techniques.
+## Project Overview
+
+The **AI Resume–Job Matching System** is a web-based application that analyzes a candidate’s resume against a job description and calculates a compatibility score using Natural Language Processing (NLP).
+
+The system extracts and compares relevant keywords, computes similarity scores, and provides structured feedback to help candidates optimize their resumes for specific roles.
+
+Built with Streamlit, this tool demonstrates practical AI application in recruitment technology.
+
+---
 
 ## Features
-- Upload multiple resumes (PDF/DOCX)
-- Input a job description
-- Computes similarity scores for each resume
-- Ranks resumes based on relevance
 
-## Setup Instructions
-1. Clone the repository
-2. Create a virtual environment:
+* 📄 Upload Resume (PDF format)
+* 📝 Paste Job Description
+* 🧠 NLP-based Text Processing
+* 🔍 Keyword Extraction & Matching
+* 📊 Cosine Similarity Score Calculation
+* 🎨 Color-Coded Match Score (Green = High, Red = Low)
+* 📈 Visual Progress Bar for Match Percentage
+* 📑 Downloadable PDF Report
+* ⚡ Clean, Interactive Streamlit UI
+
+---
+
+## Tech Stack
+
+**Programming Language**
+
+* Python 3.x
+
+**Libraries & Frameworks**
+
+* Streamlit (Frontend Web App)
+* Scikit-learn (TF-IDF Vectorization & Cosine Similarity)
+* NLTK (Text preprocessing)
+* PyPDF2 (Resume PDF extraction)
+* ReportLab (PDF report generation)
+* Pandas (Data handling)
+
+---
+
+## ⚙ Installation
+
+### 1️⃣ Clone the repository
+
+```bash
+git clone https://github.com/your-username/resume-ai-analyzer.git
+cd resume-ai-analyzer
+```
+
+### 2️⃣ Create virtual environment (recommended)
 
 ```bash
 python -m venv venv
+```
+
+Activate it:
+
+**Windows:**
+
+```bash
 venv\Scripts\activate
 ```
 
-3. Install dependencies:
+**Mac/Linux:**
+
+```bash
+source venv/bin/activate
+```
+
+### 3️⃣ Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-4. Run the app:
+If `reportlab` is missing:
+
+```bash
+pip install reportlab
+```
+
+---
+
+## ▶ How to Run
 
 ```bash
 streamlit run app.py
 ```
 
-## Future Improvements
-- Use OpenAI embeddings for better semantic matching
-- Extract structured information: skills, education, experience
-- Add downloadable reports for top candidates
+Then open your browser at:
+
+```
+http://localhost:8501
+```
+
+---
+
+## 📊 Example Output
+
+**Match Score: 78%**
+
+🟢 High Compatibility
+
+**Matched Keywords:**
+
+* Python
+* Machine Learning
+* Data Analysis
+* SQL
+
+**Missing Keywords:**
+
+* Docker
+* AWS
+* CI/CD
+
+The system also generates a downloadable PDF report summarizing:
+
+* Match percentage
+* Matched keywords
+* Missing keywords
+* Recommendations
+
+---
+
+## How It Works
+
+1. Extracts text from uploaded PDF resume
+2. Cleans and preprocesses text (tokenization, stopword removal)
+3. Converts resume and job description into TF-IDF vectors
+4. Computes cosine similarity
+5. Displays results with visual feedback
+
+---
+
+## 🎯 Future Improvements
+
+* BERT-based semantic similarity
+* Skill categorization (technical vs soft skills)
+* Resume improvement suggestions
+* Multi-job comparison
+* Database integration
+* Deployment on Streamlit Cloud / AWS
