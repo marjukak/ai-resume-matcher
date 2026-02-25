@@ -1,6 +1,6 @@
-# 🤖 AI Resume–Job Matching System
+# AI Resume–Job Matching System
 
-## 📌 Project Overview
+## Project Overview
 
 The **AI Resume–Job Matching System** is a web-based application that analyzes a candidate’s resume against a job description and calculates a compatibility score using Natural Language Processing (NLP).
 
@@ -10,7 +10,7 @@ Built with Streamlit, this tool demonstrates practical AI application in recruit
 
 ---
 
-## 🚀 Features
+## Features
 
 * 📄 Upload Resume (PDF format)
 * 📝 Paste Job Description
@@ -24,7 +24,7 @@ Built with Streamlit, this tool demonstrates practical AI application in recruit
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 **Programming Language**
 
@@ -147,29 +147,8 @@ The system also generates a downloadable PDF report summarizing:
 
 ---
 
-## 👨‍💻 Author
+## Author
 
-Your Name
+Marjuk
 Computer Science Student
 Passionate about AI, Machine Learning & Software Engineering
-
----
-
-Now here’s the honest part:
-
-If you push this to GitHub with:
-
-* Clean folder structure
-* `requirements.txt`
-* Good commit history
-* Screenshots in the README
-
-This becomes a **strong portfolio project**, not just coursework.
-
-If you want, next we can:
-
-* Upgrade the README to look elite (badges, demo GIF, architecture diagram)
-* Or prepare a LinkedIn project description
-* Or turn this into a deployable public app
-
-Your move.
