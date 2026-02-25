@@ -150,5 +150,7 @@ The system also generates a downloadable PDF report summarizing:
 ## Author
 
 Marjuk
+
 Computer Science Student
+
 Passionate about AI, Machine Learning & Software Engineering
